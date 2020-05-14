@@ -1,14 +1,14 @@
-const path = require('path');
+const path = require("path");
 
-const SRC_DIR = path.join(__dirname, '/react/src');
-const DIST_DIR = path.join(__dirname, '/react/dist');
+const SRC_DIR = path.join(__dirname, "/src");
+const DIST_DIR = path.join(__dirname, "/dist");
 
 module.exports = {
   mode: process.env.MODE || "development",
-  entry: path.join(__dirname, '/react/src'),
+  entry: SRC_DIR,
   output: {
     path: DIST_DIR,
-    filename: "bundle.js"
+    filename: "bundle.js",
   },
   module: {
     rules: [
@@ -17,19 +17,13 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader"
-          }
-        ]
+            loader: "babel-loader",
+          },
+        ],
       },
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader'
-          }
-        ]
-      }
-    ]
-  }
-}
+    ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
+};
