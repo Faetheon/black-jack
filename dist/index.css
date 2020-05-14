@@ -1,0 +1,67 @@
+body {
+  font-size: large;
+  background-color: grey;
+  margin: 0;
+}
+
+.game {
+  display: flex;
+  flex-flow: column;
+  margin: 20px;
+}
+
+.card-body {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 70px;
+  margin: 0 3px;
+  padding: 3px;
+  background-color: grey;
+}
+
+.player-hand {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30vw;
+  height: 200px;
+  background-color: grey;
+}
+
+.dealer-hand {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30vw;
+  height: 200px;
+  background-color: grey;
+}
+
+.play-area {
+  display: flex;
+  flex-flow: row;
+  margin: 14px;
+  justify-content: space-between;
+}
+
+.player-actions {
+  display: flex;
+  flex-flow: column;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 27px;
+  align-self: center;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+.player-total {
+  position: absolute;
+  left: 30vw;
+  top: 215px;
+}
