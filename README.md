@@ -1,5 +1,5 @@
 # Black Jack
--Rules
+-- Rules
 1. There is a permanent dealer which will deal all cards.
 2. There will be one standard deck of 52 cards used, however the number of decks should be configurable for a future release. The deck is shuffled before each game.
 3. The dealer will be dealt 2 cards, one face up, one face down to begin the game.
